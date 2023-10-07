@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Home from "./components/Home";
 import Sidenav from "./components/Sidenav";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 const App = () => {
   const [selectedPage, setSelectedPage] = useState("home");
@@ -9,6 +11,12 @@ const App = () => {
       <Sidenav selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
       <div className='mx-auto md:h-full'>
         <Home setSelectedPage={setSelectedPage} />
+      </div>
+      <div className='mt-96 md:mt-0'>
+        <Projects />
+      </div>
+      <div className='md:mt-0'>
+        <Contact />
       </div>
     </div>
   );
