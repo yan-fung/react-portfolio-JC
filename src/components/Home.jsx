@@ -9,13 +9,16 @@ const Home = ({ setSelectedPage }) => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
 
   return (
-    <section id='home' className='relative pt-50'>
+    <section id='home' className='relative pt-10'>
       {/* Wallpaper */}
-      <img
-        className='w-full md:h-screen object-cover'
-        src={wallpaper}
-        alt='Wallpaper'
-      />
+      <div className=''>
+        {" "}
+        <img
+          className='w-full md:h-screen object-cover'
+          src={wallpaper}
+          alt='Wallpaper'
+        />
+      </div>
 
       {/* Content */}
       <div className='absolute top-1/2 transform-500 -translate-y-1/2 text-center w-full'>
