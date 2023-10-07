@@ -25,7 +25,7 @@ const Sidenav = ({ setSelectedPage }) => {
                 Home
               </div>
             </AnchorLink>
-            <AnchorLink onClick={() => setSelectedPage("about")} href='#about'>
+            <AnchorLink onClick={() => setSelectedPage("home")} href='#home'>
               <div className='hover:text-yellow opacity-80 transition duration-50 font-playfair'>
                 About Me
               </div>
@@ -68,8 +68,8 @@ const Sidenav = ({ setSelectedPage }) => {
                   </div>
                 </AnchorLink>
                 <AnchorLink
-                  onClick={() => setSelectedPage("about")}
-                  href='#about'
+                  onClick={() => setSelectedPage("home")}
+                  href='#home'
                 >
                   <div className='hover:text-yellow opacity-80 transition duration-500'>
                     About Me
