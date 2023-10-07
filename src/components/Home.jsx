@@ -3,6 +3,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import { motion } from "framer-motion";
 import useMediaQuery from "../hooks/useMediaQuery";
 import profilePic from "../assets/jc-pic.png";
+import SocialMediaIcons from "./SocialMediaIcons";
 
 const Home = ({ setSelectedPage }) => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
@@ -98,6 +99,20 @@ const Home = ({ setSelectedPage }) => {
                 visible: { opacity: 1, x: 0 },
               }}
             ></motion.div>
+            {/* Social Media */}
+            <motion.div
+              className='justify-center text-center'
+              initial='hidden'
+              whileInView='visible'
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ delay: 0.4, duration: 0.8 }}
+              variants={{
+                hidden: { opacity: 0, x: -50 },
+                visible: { opacity: 1, x: 0 },
+              }}
+            >
+              <SocialMediaIcons />
+            </motion.div>
           </div>
         </motion.div>
       </div>
