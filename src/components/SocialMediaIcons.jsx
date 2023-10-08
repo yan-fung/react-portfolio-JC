@@ -3,7 +3,7 @@ import InstagramPic from "../assets/instagram-icon.png";
 
 const SocialMediaIcons = () => {
   return (
-    <div className='flex justify-center my-5 gap-7 md:pl-12'>
+    <div className='flex justify-center my-5 gap-7 md:pl-5'>
       <a
         className='hover:opacity-80 transition duration-500'
         href='https://www.linkedin.com/in/john-clarke-john-klark-7782701b9/'
