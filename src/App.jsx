@@ -3,6 +3,7 @@ import Home from "./components/Home";
 import Sidenav from "./components/Sidenav";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 const App = () => {
   const [selectedPage, setSelectedPage] = useState("home");
@@ -18,6 +19,7 @@ const App = () => {
       <div className='md:mt-0'>
         <Contact />
       </div>
+      <Footer />
     </div>
   );
 };

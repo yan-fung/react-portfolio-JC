@@ -63,7 +63,7 @@ const Sidenav = ({ setSelectedPage }) => {
                   onClick={() => setSelectedPage("home")}
                   href='#home'
                 >
-                  <div className='hover:text-yellow opacity-80 transition duration-500'>
+                  <div className='hover:text-yellow opacity-80 transition duration-500 font-playfair'>
                     Home
                   </div>
                 </AnchorLink>
@@ -71,7 +71,7 @@ const Sidenav = ({ setSelectedPage }) => {
                   onClick={() => setSelectedPage("home")}
                   href='#home'
                 >
-                  <div className='hover:text-yellow opacity-80 transition duration-500'>
+                  <div className='hover:text-yellow opacity-80 transition duration-500 font-playfair'>
                     About Me
                   </div>
                 </AnchorLink>
@@ -79,7 +79,7 @@ const Sidenav = ({ setSelectedPage }) => {
                   onClick={() => setSelectedPage("projects")}
                   href='#projects'
                 >
-                  <div className='hover:text-yellow opacity-80 transition duration-500'>
+                  <div className='hover:text-yellow opacity-80 transition duration-500 font-playfair'>
                     Projects
                   </div>
                 </AnchorLink>
@@ -87,7 +87,7 @@ const Sidenav = ({ setSelectedPage }) => {
                   onClick={() => setSelectedPage("contact")}
                   href='#contact'
                 >
-                  <div className='hover:text-yellow opacity-80 transition duration-500'>
+                  <div className='hover:text-yellow opacity-80 transition duration-500 font-playfair'>
                     Contact
                   </div>
                 </AnchorLink>

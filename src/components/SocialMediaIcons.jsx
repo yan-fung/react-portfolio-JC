@@ -1,5 +1,6 @@
 import linkedinPic from "../assets/linkedin_icon.png";
 import InstagramPic from "../assets/instagram-icon.png";
+import emailPic from "../assets/email.png";
 
 const SocialMediaIcons = () => {
   return (
@@ -19,6 +20,14 @@ const SocialMediaIcons = () => {
         rel='noreferrer'
       >
         <img alt='instagram-link' src={InstagramPic} className='w-10 h-10' />
+      </a>
+      <a
+        className='hover:opacity-80 transition duration-500'
+        href='mailto:johnklark@gmx.co.uk'
+        target='_blank'
+        rel='noreferrer'
+      >
+        <img alt='instagram-link' src={emailPic} className='w-10 h-10' />
       </a>
     </div>
   );
