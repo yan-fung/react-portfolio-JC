@@ -95,7 +95,7 @@ const Projects = () => {
         initial='hidden'
         whileInView='visible'
         viewport={{ once: true, amount: 0.5 }}
-        transition={{ delay: 0.3, duration: 0.8 }}
+        transition={{ delay: 0.1, duration: 0.8 }}
         variants={{
           hidden: { opacity: 0, x: -50 },
           visible: { opacity: 1, x: 0 },
@@ -129,7 +129,7 @@ const Projects = () => {
               </p>
             )}
             <button
-              className='text-base md:text-lg  font-playfair text-center w-32 border-2 border-orange-100 text-brown px-4 py-2 rounded-lg'
+              className='text-base md:text-lg font-playfair text-center w-32 border-2 border-orange-100 text-brown px-4 py-2 rounded-lg hover:bg-stone-400/20'
               onClick={toggleReadMoreLess}
             >
               {isShowMore ? "Read Less" : "Read More"}
