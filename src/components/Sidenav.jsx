@@ -3,12 +3,16 @@ import { useState } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineClose } from "react-icons/ai";
 
 const Sidenav = ({ setSelectedPage }) => {
   const [nav, setNav] = useState(false);
   const isAboveSmallScreens = useMediaQuery("(min-width: 768px)");
   const handleNav = () => {
     setNav(!nav);
+  };
+  const closeNav = () => {
+    setNav(false);
   };
   return (
     //desktop
@@ -51,10 +55,19 @@ const Sidenav = ({ setSelectedPage }) => {
           ""
         )}
         {/* MOBILE NAV */}
-        <AiOutlineMenu
-          onClick={handleNav}
-          className='absolute top-7 right-4 z-[99] sm:hidden text-xl'
-        />
+        {nav ? (
+          // Close button when navigation is open
+          <AiOutlineClose
+            onClick={closeNav}
+            className='absolute top-7 right-4 z-[99] sm:hidden text-xl cursor-pointer'
+          />
+        ) : (
+          // Menu button when navigation is closed
+          <AiOutlineMenu
+            onClick={handleNav}
+            className='absolute top-7 right-4 z-[99] sm:hidden text-xl cursor-pointer'
+          />
+        )}
         <div>
           {!isAboveSmallScreens && nav ? (
             <div className='fixed py-20 right-0 bottom-0 h-full bg-black text-white opacity-90 w-[300px] cursor-pointer sm:hidden'>
